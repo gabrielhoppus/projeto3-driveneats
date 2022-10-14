@@ -26,35 +26,39 @@
         <div class="container_section">
             <p>Primeiro, seu prato</p>
             <div class="scroll">
-                <div class="food_option">
+                <div onclick="chooseFrango()" id="frango" class="food_option">
+                    <ion-icon id="checkmark_frango" name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/frango_yin_yang 1.png"/>
-                    <div class="food_info">
+                    <div class="food_info">                        
                         <h1>Frango Yin Yang</h1>
                         <h2>Um pouco de batata, um pouco de salada</h2>
-                        <h3>R$ 14,90</h3>
+                        <h3>R$ 24,90</h3>
                     </div>
                 </div>
-                <div class="food_option">
-                    <img class="food_picture" src="./assets/frango_yin_yang 1.png"/>
+                <div onclick="chooseArroz()" id="arroz" class="food_option">
+                    <ion-icon id="checkmark_arroz" name="checkmark-circle"></ion-icon>
+                    <img class="food_picture" src="./assets/fried_rice.jfif"/>
                     <div class="food_info">
-                        <h1>Frango Yin Yang</h1>
-                        <h2>Um pouco de batata, um pouco de salada</h2>
-                        <h3>R$ 14,90</h3>
+                        <h1>Arroz frito</h1>
+                        <h2>Arroz frito com proteína a escolha</h2>
+                        <h3>R$ 35,90</h3>
                     </div>
                 </div>
-                <div class="food_option">
-                    <img class="food_picture" src="./assets/frango_yin_yang 1.png"/>
+                <div onclick="chooseMacarrao()" id="macarrao" class="food_option">
+                    <ion-icon id="checkmark_macarrao" name="checkmark-circle"></ion-icon>
+                    <img class="food_picture" src="./assets/yakisoba.jpg"/>
                     <div class="food_info">
-                        <h1>Frango Yin Yang</h1>
-                        <h2>Um pouco de batata, um pouco de salada</h2>
-                        <h3>R$ 14,90</h3>
+                        <h1>Yakisoba</h1>
+                        <h2>Yakisoba com proteína a escolha</h2>
+                        <h3>R$ 29,90</h3>
                     </div>
                 </div>
-                <div class="food_option">
-                    <img class="food_picture" src="./assets/frango_yin_yang 1.png"/>
+                <div onclick="chooseSalada()" id="salada" class="food_option">
+                    <ion-icon id="checkmark_salada" name="checkmark-circle"></ion-icon>
+                    <img class="food_picture" src="./assets/salada.png"/>
                     <div class="food_info">
-                        <h1>Frango Yin Yang</h1>
-                        <h2>Um pouco de batata, um pouco de salada</h2>
+                        <h1>Salada de Repolho</h1>
+                        <h2>Típica salada de repolho e cenoura</h2>
                         <h3>R$ 14,90</h3>
                     </div>
                 </div>
@@ -63,36 +67,40 @@
         <div class="container_section">
             <p>Agora, sua bebida</p>
             <div class="scroll">
-                <div class="food_option">
+                <div onclick="chooseCoca()" id="coca" class="food_option">
+                    <ion-icon id="checkmark_coca" name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/coquinha_gelada 1.png"/>
                     <div class="food_info">
-                        <h1>Coquinha gelada</h1>
-                        <h2>Lata 350ml</h2>
+                        <h1>Refrigerante 350ml</h1>
+                        <h2>Sabores diversos</h2>
+                        <h3>R$ 5,90</h3>
+                    </div>
+                </div>
+                <div onclick="chooseCha()" id="cha" class="food_option">
+                    <ion-icon id="checkmark_cha" name="checkmark-circle"></ion-icon>
+                    <img class="food_picture" src="./assets/ice_tea.jpg"/>
+                    <div class="food_info">
+                        <h1>Chá Gelado</h1>
+                        <h2>Com ou sem mate</h2>
                         <h3>R$ 4,90</h3>
                     </div>
                 </div>
-                <div class="food_option">
-                    <img class="food_picture" src="./assets/coquinha_gelada 1.png"/>
+                <div onclick="chooseSuco()" id="suco" class="food_option">
+                    <ion-icon id="checkmark_suco" name="checkmark-circle"></ion-icon>
+                    <img class="food_picture" src="./assets/suco.jpg"/>
                     <div class="food_info">
-                        <h1>Coquinha gelada</h1>
-                        <h2>Lata 350ml</h2>
-                        <h3>R$ 4,90</h3>
+                        <h1>Suco da fruta</h1>
+                        <h2>Sabores variados</h2>
+                        <h3>R$ 7,90</h3>
                     </div>
                 </div>
-                <div class="food_option">
-                    <img class="food_picture" src="./assets/coquinha_gelada 1.png"/>
+                <div onclick="chooseAgua()" id="agua" class="food_option">
+                    <ion-icon id="checkmark_agua" name="checkmark-circle"></ion-icon>
+                    <img class="food_picture" src="./assets/agua.jpg"/>
                     <div class="food_info">
-                        <h1>Coquinha gelada</h1>
-                        <h2>Lata 350ml</h2>
-                        <h3>R$ 4,90</h3>
-                    </div>
-                </div>
-                <div class="food_option">
-                    <img class="food_picture" src="./assets/coquinha_gelada 1.png"/>
-                    <div class="food_info">
-                        <h1>Coquinha gelada</h1>
-                        <h2>Lata 350ml</h2>
-                        <h3>R$ 4,90</h3>
+                        <h1>Água Mineral</h1>
+                        <h2>Garrafa 500ml</h2>
+                        <h3>R$ 2,90</h3>
                     </div>
                 </div>    
             </div>
@@ -100,36 +108,40 @@
         <div class="container_section">
             <p>Agora, sua bebida</p>
             <div class="scroll">
-                <div class="food_option">
+                <div onclick="choosePudim()" id="pudim" class="food_option">
+                    <ion-icon id="checkmark_pudim" name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/pudim 1.png"/>
                     <div class="food_info">
                         <h1>Pudim</h1>
-                        <h2>Apenas pudim</h2>
-                        <h3>R$ 7,90</h3>
+                        <h2>Pudim de leite</h2>
+                        <h3>R$ 8,90</h3>
                     </div>
                 </div>
-                <div class="food_option">
-                    <img class="food_picture" src="./assets/pudim 1.png"/>
+                <div onclick="chooseMochi()" id="mochi" class="food_option">
+                    <ion-icon id="checkmark_mochi" name="checkmark-circle"></ion-icon>
+                    <img class="food_picture" src="./assets/mochi.jpg"/>
                     <div class="food_info">
-                        <h1>Pudim</h1>
-                        <h2>Apenas pudim</h2>
-                        <h3>R$ 7,90</h3>
+                        <h1>Mochi</h1>
+                        <h2>Com pasta de feijão</h2>
+                        <h3>R$ 9,90</h3>
                     </div>
                 </div>
-                <div class="food_option">
-                    <img class="food_picture" src="./assets/pudim 1.png"/>
+                <div onclick="chooseTart()" id="tart" class="food_option">
+                    <ion-icon id="checkmark_tart" name="checkmark-circle"></ion-icon>
+                    <img class="food_picture" src="./assets/egg_tart.jpg"/>
                     <div class="food_info">
-                        <h1>Pudim</h1>
-                        <h2>Apenas pudim</h2>
-                        <h3>R$ 7,90</h3>
+                        <h1>Torta de Ovos</h1>
+                        <h2>Delicatesse chinesa</h2>
+                        <h3>R$ 5,90</h3>
                     </div>
                 </div>
-                <div class="food_option">
-                    <img class="food_picture" src="./assets/coquinha_gelada 1.png"/>
+                <div onclick="chooseBrownie()" id="brownie" class="food_option">
+                    <ion-icon id="checkmark_brownie" name="checkmark-circle"></ion-icon>
+                    <img class="food_picture" src="./assets/brownie.jpg"/>
                     <div class="food_info">
-                        <h1>Coquinha gelada</h1>
-                        <h2>Lata 350ml</h2>
-                        <h3>R$ 4,90</h3>
+                        <h1>Brownie Natural</h1>
+                        <h2>Não é o da felicidade</h2>
+                        <h3>R$ 8,90</h3>
                     </div>
                 </div>   
             </div>
@@ -143,6 +155,6 @@
         </footer>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <scrpt src="./scripts/scripts.js"></scrpt>
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>
