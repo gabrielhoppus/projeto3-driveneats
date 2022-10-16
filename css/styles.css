@@ -31,6 +31,7 @@ header p{
 }
 
 h1{
+    margin-left: 15px;
     font-weight: 700;
     font-size: 16px;
     color: #333333;
@@ -39,6 +40,7 @@ h1{
 }
 
 h2{
+    margin-left: 15px;
     font-size: 15px;
     font-weight: 300;
     color: #A6A6A6;
@@ -47,6 +49,7 @@ h2{
 }
 
 h3{
+    margin-left: 15px;
     font-size: 16px;
     font-weight: 400;
     color: #000000;
@@ -91,10 +94,6 @@ span{
     border: solid 1px #EEEEEE;
     border-radius: 8px;
     box-sizing: border-box;
-}
-
-.food_info{
-    margin-left: 15px;
 }
 
 .active{
