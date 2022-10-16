@@ -134,19 +134,7 @@ a{
     font-size: 20px;    
 }
 
-ion-icon{
-    width: 19px;
-    height: 19px;
-    position: absolute;
-    bottom: 8px;
-    right: 9px;
-    color: green;
-    display: none;
-}
 
-.checkmark{
-    display: block;
-}
 
 .food_option{
     width: 172px;
@@ -157,45 +145,40 @@ ion-icon{
     cursor: pointer;
     position: relative;
     box-sizing: border-box;
-    border: 3px white solid;
+    border: solid 3px white;
 }
 
-.food_option:hover{
-    background-color: rgb(236, 236, 236);
-    box-sizing: border-box;
-    border: 3px rgb(236, 236, 236) solid;
-}
-
-.chosen:hover{
-    background-color: rgb(236, 236, 236);
+.food_chosen,
+.drink_chosen,
+.dessert_chosen{
     box-sizing: border-box;
     border: 3px green solid;
 }
 
-.chosen{
-    box-sizing: border-box;
-    border: 3px green solid;
+ion-icon{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    bottom: 8px;
+    right: 9px;
+    color: green;
+    display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.food_chosen>ion-icon,
+.drink_chosen>ion-icon,
+.dessert_chosen>ion-icon{
+    display: block;
+}
 
 button{
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
+}
+
+.payout{
+    background-color: #32B72F;
+    font-weight: 700;
+    cursor: pointer;
 }

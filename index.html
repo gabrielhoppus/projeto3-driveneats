@@ -23,11 +23,11 @@
         <span>Sua comida em 6 minutos</span>
     </header>
     <div class="container_all">
-        <div class="container_section">
+        <div id="comida" class="container_section">
             <p>Primeiro, seu prato</p>
             <div class="scroll">
-                <div onclick="chooseFrango()" id="frango" class="food_option">
-                    <ion-icon id="checkmark_frango" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseFood(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/frango_yin_yang 1.png"/>
                     <div class="food_info">                        
                         <h1>Frango Yin Yang</h1>
@@ -35,8 +35,8 @@
                         <h3>R$ 24,90</h3>
                     </div>
                 </div>
-                <div onclick="chooseArroz()" id="arroz" class="food_option">
-                    <ion-icon id="checkmark_arroz" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseFood(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/fried_rice.jfif"/>
                     <div class="food_info">
                         <h1>Arroz frito</h1>
@@ -44,8 +44,8 @@
                         <h3>R$ 35,90</h3>
                     </div>
                 </div>
-                <div onclick="chooseMacarrao()" id="macarrao" class="food_option">
-                    <ion-icon id="checkmark_macarrao" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseFood(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/yakisoba.jpg"/>
                     <div class="food_info">
                         <h1>Yakisoba</h1>
@@ -53,8 +53,8 @@
                         <h3>R$ 29,90</h3>
                     </div>
                 </div>
-                <div onclick="chooseSalada()" id="salada" class="food_option">
-                    <ion-icon id="checkmark_salada" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseFood(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/salada.png"/>
                     <div class="food_info">
                         <h1>Salada de Repolho</h1>
@@ -64,11 +64,11 @@
                 </div>
             </div>
         </div>
-        <div class="container_section">
+        <div id="bebida" class="container_section">
             <p>Agora, sua bebida</p>
             <div class="scroll">
-                <div onclick="chooseCoca()" id="coca" class="food_option">
-                    <ion-icon id="checkmark_coca" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseDrink(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/coquinha_gelada 1.png"/>
                     <div class="food_info">
                         <h1>Refrigerante 350ml</h1>
@@ -76,8 +76,8 @@
                         <h3>R$ 5,90</h3>
                     </div>
                 </div>
-                <div onclick="chooseCha()" id="cha" class="food_option">
-                    <ion-icon id="checkmark_cha" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseDrink(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/ice_tea.jpg"/>
                     <div class="food_info">
                         <h1>Chá Gelado</h1>
@@ -85,8 +85,8 @@
                         <h3>R$ 4,90</h3>
                     </div>
                 </div>
-                <div onclick="chooseSuco()" id="suco" class="food_option">
-                    <ion-icon id="checkmark_suco" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseDrink(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/suco.jpg"/>
                     <div class="food_info">
                         <h1>Suco da fruta</h1>
@@ -94,8 +94,8 @@
                         <h3>R$ 7,90</h3>
                     </div>
                 </div>
-                <div onclick="chooseAgua()" id="agua" class="food_option">
-                    <ion-icon id="checkmark_agua" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseDrink(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/agua.jpg"/>
                     <div class="food_info">
                         <h1>Água Mineral</h1>
@@ -105,11 +105,11 @@
                 </div>    
             </div>
         </div>
-        <div class="container_section">
-            <p>Agora, sua bebida</p>
+        <div id="sobremesa" class="container_section">
+            <p>Por fim, sua sobremesa</p>
             <div class="scroll">
-                <div onclick="choosePudim()" id="pudim" class="food_option">
-                    <ion-icon id="checkmark_pudim" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseDessert(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/pudim 1.png"/>
                     <div class="food_info">
                         <h1>Pudim</h1>
@@ -117,8 +117,8 @@
                         <h3>R$ 8,90</h3>
                     </div>
                 </div>
-                <div onclick="chooseMochi()" id="mochi" class="food_option">
-                    <ion-icon id="checkmark_mochi" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseDessert(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/mochi.jpg"/>
                     <div class="food_info">
                         <h1>Mochi</h1>
@@ -126,8 +126,8 @@
                         <h3>R$ 9,90</h3>
                     </div>
                 </div>
-                <div onclick="chooseTart()" id="tart" class="food_option">
-                    <ion-icon id="checkmark_tart" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseDessert(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/egg_tart.jpg"/>
                     <div class="food_info">
                         <h1>Torta de Ovos</h1>
@@ -135,8 +135,8 @@
                         <h3>R$ 5,90</h3>
                     </div>
                 </div>
-                <div onclick="chooseBrownie()" id="brownie" class="food_option">
-                    <ion-icon id="checkmark_brownie" name="checkmark-circle"></ion-icon>
+                <div onclick="chooseDessert(this)" class="food_option">
+                    <ion-icon name="checkmark-circle"></ion-icon>
                     <img class="food_picture" src="./assets/brownie.jpg"/>
                     <div class="food_info">
                         <h1>Brownie Natural</h1>
@@ -147,10 +147,8 @@
             </div>
         </div>
         <footer>
-            <button>
-                <a>
-                    Selecione os 3 itens</br> para fechar o pedido
-                </a>
+            <button class="pay_button" disabled>
+                <a>Selecione os 3 itens</br> para fechar o pedido</a>
             </button>
         </footer>
     </div>
