@@ -89,9 +89,9 @@ function orderConfirm(){
   const food = (document.querySelector(".food_chosen>h1")).innerHTML;
   const drink = (document.querySelector(".drink_chosen>h1")).innerHTML;
   const dessert = (document.querySelector(".dessert_chosen>h1")).innerHTML;
-  let price_food = (document.querySelector(".food_chosen>h3")).innerHTML;
-  let price_drink = (document.querySelector(".drink_chosen>h3")).innerHTML;
-  let price_dessert = (document.querySelector(".dessert_chosen>h3")).innerHTML;
+  let price_food = (document.querySelector(".food_chosen>h3")).innerHTML.replace("R$ ", "");
+  let price_drink = (document.querySelector(".drink_chosen>h3")).innerHTML.replace("R$ ", "");
+  let price_dessert = (document.querySelector(".dessert_chosen>h3")).innerHTML.replace("R$ ", "");
   let confirm_food = (document.querySelector(".food_confirmation>h4"));
   let confirm_drink = (document.querySelector(".drink_confirmation>h4"));
   let confirm_dessert = (document.querySelector(".dessert_confirmation>h4"));
@@ -105,9 +105,9 @@ function orderConfirm(){
   confirm_dessert_price.innerHTML = `${price_dessert}`
 
 
-  price_food = price_food.replace(",", ".").replace("R$ ", "");
-  price_drink = price_drink.replace(",", ".").replace("R$ ", "");
-  price_dessert = price_dessert.replace(",", ".").replace("R$ ", "");
+  price_food = price_food.replace(",", ".")
+  price_drink = price_drink.replace(",", ".")
+  price_dessert = price_dessert.replace(",", ".")
 
   order_total = Number(price_food) + 
   Number(price_drink) + 
