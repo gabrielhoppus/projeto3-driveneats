@@ -22,7 +22,7 @@
         <p>DrivenEats</p>
         <span>Sua comida em 6 minutos</span>
     </header>
-    <div class="container_all">
+    <div class="container_all">  
         <div id="comida" class="container_section">
             <p>Primeiro, seu prato</p>
             <div class="scroll">
@@ -123,10 +123,27 @@
             </div>
         </div>
         <footer>
-            <button onclick="messageOrder()" target='_blank' disabled>
-                <a>Selecione os 3 itens</br> para fechar o pedido</a>
+            <button class="order_button" onclick="orderConfirm()" disabled>
+                Selecione os 3 itens</br> para fechar o pedido
             </button>
         </footer>
+        <div class="confirmation hidden">
+            <h1>Confirme seu pedido</h1>
+            <div class="food_confirmation">
+                <h4></h4><h5></h5>
+            </div>
+            <div class="drink_confirmation">
+                <h4></h4><h5></h5>
+            </div>
+            <div class="dessert_confirmation">
+                <h4></h4><h5></h5>
+            </div>
+            <div class="total_confirmation">
+                <h4>Total:</h4><h5></h5>
+            </div>
+            <button onclick="messageOrder()" class="confirmation_button">Tudo certo, pode pedir!</button>
+            <button onclick="orderCancel()"class="cancellation_button">Cancelar</button>
+        </div>   
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="./scripts/scripts.js"></script>
